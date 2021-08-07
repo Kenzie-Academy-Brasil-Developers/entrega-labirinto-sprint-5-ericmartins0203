@@ -1,0 +1,84 @@
+html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, summary, footer, main, aside, section{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    list-style-type: none;
+}
+body{
+    background-color: honeydew;
+}
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+header{
+    background: rgba( 255, 255, 255, 0.25 );
+    text-align: center;
+    font-size: 40px;
+    padding: 40px 0;
+    height: 5vw;
+    width: 100%;
+    background-color: rgba(114, 121, 114, 0.651);
+}
+div{
+    height: 40px;
+    width: 40px;
+}
+button{
+    margin:10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 15px;
+    background-color: black;
+    color: whitesmoke;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.line{
+    display: flex;
+    flex-direction: row;
+}
+
+.wall{
+    background-color: black;
+    border: 2px solid black;}
+.way{
+}
+.start{
+    background-color: green
+}
+.finish{
+    background-color: red;
+}
+
+.hidden{
+    display:none;
+}
+#box {
+    width: 40px;
+    height: 40px;
+    background: blue;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8.0px );
+    -webkit-backdrop-filter: blur( 8.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+/* se for fazer com mobile
+@media screen and (min-width: 500px) {
+    div{
+        height: 50px;
+        width: 50px;
+    }
+}
+
+*/
