@@ -61,6 +61,18 @@ button{
 .hidden{
     display:none;
 }
+.congrats{
+    font-size:xxx-large;
+    top: 300px;
+    color: rgb(156, 75, 194);
+    font-weight: 600;
+    position: absolute;
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8.0px );
+    -webkit-backdrop-filter: blur( 8.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
 #box {
     width: 40px;
     height: 40px;

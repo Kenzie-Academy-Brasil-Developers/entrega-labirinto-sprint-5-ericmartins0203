@@ -32,7 +32,7 @@ function createMap(){
             container.append(line)
         for (let m = 0;m<map[i].length;m++){
             let celula = document.createElement('div')
-            celula.id = i*21+m
+            celula.id = i*map[0].length+m
             if (map[i][m]=== 'W'){
                 celula.classList.add('wall')
             }
