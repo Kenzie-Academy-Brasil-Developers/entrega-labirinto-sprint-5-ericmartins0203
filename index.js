@@ -1,5 +1,7 @@
 const container = document.querySelector('.container')
 const botao = document.querySelector('button')
+const mensage = document.querySelector('p') 
+
 const map = [
     "WWWWWWWWWWWWWWWWWWWWW",
     "W   W     W     W W W",
@@ -49,8 +51,9 @@ function createMap(){
         }
     }
 
-    //hidden button
-    botao.classList.add('hidden')
+    //hidden mensage button
+    botao.classList.add('hidden');
+    mensage.classList.add('hidden');
 
     //posição inicial
     player = document.createElement('div')
@@ -61,9 +64,11 @@ function createMap(){
 
     //movimentação, verificação de validade da movimentação e parabenização
 document.addEventListener('keydown', (event) => {
+    event.preventDefault()
     position = document.querySelector('#box').parentElement
     position = Number(position.id)
     const keyName = event.key
+    
     if(position%21===0 && keyName==="ArrowLeft"){
         return 
     }
@@ -89,9 +94,9 @@ document.addEventListener('keydown', (event) => {
     if (next.classList.value === 'finish'){
         next.append(player)
         let congrats = document.createElement('p')
-        congrats.innerText = 'Parabéns, você chegou até o final do labirinto!'
+        congrats.innerText = 'Parabéns, você é um verdadeiro herói!'
         congrats.classList.add('congrats')
         container.append(congrats)
     }
     return
-  });
+  })
